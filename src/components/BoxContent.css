@@ -1,0 +1,33 @@
+.boxes {
+  width: 400px;
+  background-color: white;
+  margin: 15px 29px;
+}
+
+h2 {
+  font-size: large;
+  padding: 20px 20px;
+  border-bottom: 0.8px solid rgba(223, 223, 223, 1);
+}
+
+.links {
+  width: 100%;
+  padding: 25px 15%;
+  border-bottom: 0.4px solid rgba(223, 223, 223, 1);
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+.cycle-div {
+  text-align: center;
+  border-radius: 50%;
+  width: 35px;
+  float: left;
+  background-color: #5384ff;
+  height: 35px;
+  color: white;
+  font-weight: bold;
+  padding: 3px;
+}
