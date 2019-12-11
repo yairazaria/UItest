@@ -1,0 +1,46 @@
+.dashboard {
+  height: 100vh;
+  width: 222px;
+  min-width: 222px;
+  background-color: #0e1a35;
+}
+
+.link-item {
+  align-items: center;
+  display: flex;
+  width: 100%;
+  color: white;
+  border-bottom: 0.8px solid rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 15px;
+  &:hover {
+    background-color: #122143;
+    .left-div {
+      padding-right: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      background-color: #5584ff;
+    }
+  }
+}
+
+.left-div {
+  height: 58px;
+  display: block;
+  margin-right: 52px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  padding-left: 5px;
+}

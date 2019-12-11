@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import img from "./user.png";
 
 const Navbar = props => {
-  const width = () => (props.isDashboardOpen ? "calc(100% - 300px)" : "100%");
+  const width = () => (props.isDashboardOpen ? "calc(100% - 222px)" : "100%");
+  const iconColor = { fontSize: "15px" };
+
 
   return (
     <div className="navbar">
@@ -10,6 +12,7 @@ const Navbar = props => {
         <div className="navbar-header">
           <div className="icon-container">
             <i
+            
               className="fas fa-bars"
               onClick={() => props.toggleDashboard()}
             ></i>{" "}
@@ -34,8 +37,8 @@ const Navbar = props => {
             <i className="fas fa-bell"></i>
           </div>
 
-          <div className="icon-container">
-            <img src="./user.png" />
+          <div className="img-container">
+            <img src={img} width="30px" height="30px" />
           </div>
         </div>
       </div>

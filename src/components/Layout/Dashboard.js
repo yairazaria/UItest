@@ -1,36 +1,47 @@
 import React from "react";
-import "./Dashboard.css";
+import "./Dashboard.scss";
 import Logo from "./Logo.jpg";
 
 import { Link } from "react-router-dom";
 
-const Dashboard = props => {
+const Dashboard = ({ dashboardClass }) => {
   const iconColor = { color: "#5584ff" };
 
   return (
-    <div className={`dashboard ${props.dashboardClass}`}>
+    <div className={`dashboard ${dashboardClass}`}>
       <div className="dashboard-header">
-        {" "}
-        <img src="./Logo.jpg" />
-        Merkury
+        <img src={Logo} width="35px" height="35px" />
+        <p className="header-title"> Merkury</p>
       </div>
       <div className="link-item">
-        <i class="fas fa-home" style={iconColor}></i> Home
+        <div className="left-div"></div>
+        <i class="fas fa-home" style={iconColor}></i>
+        <p className="header-title"> Home</p>
       </div>
       <div className="link-item">
-        <i class="fas fa-qrcode" style={iconColor}></i> Workflow
+        <div className="left-div"></div>
+        <i class="fas fa-qrcode test" style={iconColor}></i>
+        <p className="header-title"> Workflow</p>
       </div>
       <div className="link-item">
-        <i class="far fa-chart-bar" style={iconColor}></i>Statistics
+        <div className="left-div"></div>
+        <i class="far fa-chart-bar" style={iconColor}></i>
+        <p className="header-title"> Statistics</p>
       </div>
       <div className="link-item">
-        <i class="far fa-calendar-alt" style={iconColor}></i> Calendar
+        <div className="left-div"></div>
+        <i class="far fa-calendar-alt" style={iconColor}></i>
+        <p className="header-title"> Calendar</p>
       </div>
       <div className="link-item">
-        <i class="far fa-user" style={iconColor}></i> Users
+        <div className="left-div"></div>
+        <i class="far fa-user" style={iconColor}></i>
+        <p className="header-title"> Users</p>
       </div>
       <div className="link-item">
-        <i class="fas fa-cog" style={iconColor}></i> Setttings
+        <div className="left-div"></div>
+        <i class="fas fa-cog" style={iconColor}></i>
+        <p className="header-title"> Setttings</p>
       </div>
     </div>
   );

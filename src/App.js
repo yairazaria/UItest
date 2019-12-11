@@ -16,7 +16,7 @@ function App() {
   const getDashboardClassName = () =>
     dashboardOpen ? "dashboard-open" : "dashboard-close";
   const contentWrapperWidth = () =>
-    dashboardOpen ? "calc(100% - 300px)" : "100%";
+    dashboardOpen ? "calc(100% - 222px)" : "100%";
   return (
     <div className="App">
       <Dashboard dashboardClass={getDashboardClassName()} />
@@ -25,9 +25,10 @@ function App() {
           isDashboardOpen={dashboardOpen}
           toggleDashboard={toggleDashboard}
         />
+
         <div className="page-content">
           <h1>Hello John!</h1>
-          <div className="boxess flexbox">
+          <div className="boxes-container">
             <Tasks />
             <Messages />
             <Activity />

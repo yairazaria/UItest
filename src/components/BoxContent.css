@@ -1,18 +1,20 @@
-.boxes {
+.box {
   width: 400px;
   background-color: white;
-  margin: 15px 29px;
+  margin: 14px 15px;
 }
 
-h2 {
-  font-size: large;
-  padding: 20px 20px;
-  border-bottom: 0.8px solid rgba(223, 223, 223, 1);
+@media screen and (max-width: 800px) {
+  .box {
+    width: auto;
+    background-color: white;
+  }
 }
 
-.links {
+.box-content {
+  display: flex;
   width: 100%;
-  padding: 25px 15%;
+  padding: 25px 23px;
   border-bottom: 0.4px solid rgba(223, 223, 223, 1);
   font-weight: normal;
   cursor: pointer;
@@ -21,13 +23,42 @@ h2 {
 }
 
 .cycle-div {
+  margin-right: 12px;
+  font-size: 16px;
   text-align: center;
   border-radius: 50%;
-  width: 35px;
-  float: left;
+  width: 28px;
   background-color: #5384ff;
-  height: 35px;
+  height: 27px;
   color: white;
   font-weight: bold;
   padding: 3px;
+}
+
+.box-header {
+  justify-content: space-between;
+  display: flex;
+  font-size: medium;
+  padding: 9px 10px;
+  border-bottom: 0.8px solid rgba(223, 223, 223, 1);
+  font-weight: bold;
+}
+
+.cycle-container {
+  display: flex;
+}
+
+.p {
+  font-size: 11px;
+  font-weight: bolder;
+  padding-bottom: 2px;
+}
+
+.content {
+  display: inline-grid;
+}
+
+.icon-style {
+  color: #f83c7b;
+  font-size: 11px;
 }

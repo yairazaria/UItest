@@ -3,12 +3,12 @@ import "./BoxContent.css";
 
 const Activiti = () => {
   return (
-    <div className="boxes">
+    <div className="box">
       <h2> Activity</h2>
-      <div className="links">test</div>
-      <div className="links">test</div>
-      <div className="links">test</div>
-      <div className="links">test</div>
+      <div className="box-content ">test</div>
+      <div className="box-content ">test</div>
+      <div className="box-content ">test</div>
+      <div className="box-content ">test</div>
     </div>
   );
 };
